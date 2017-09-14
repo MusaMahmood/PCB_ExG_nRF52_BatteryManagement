@@ -367,12 +367,12 @@ $EndComp
 $Comp
 L VCC #PWR04
 U 1 1 58A71443
-P 10000 1350
-F 0 "#PWR04" H 10000 1450 30  0001 C CNN
-F 1 "VCC" H 10000 1450 30  0000 C CNN
-F 2 "" H 10000 1350 60  0000 C CNN
-F 3 "" H 10000 1350 60  0000 C CNN
-	1    10000 1350
+P 1100 7850
+F 0 "#PWR04" H 1100 7950 30  0001 C CNN
+F 1 "VCC" H 1100 7950 30  0000 C CNN
+F 2 "" H 1100 7850 60  0000 C CNN
+F 3 "" H 1100 7850 60  0000 C CNN
+	1    1100 7850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -386,7 +386,7 @@ F 3 "~" H 18000 7550 60  0000 C CNN
 	1    18000 7550
 	1    0    0    -1  
 $EndComp
-Text Notes 8250 1350 0    60   ~ 0
+Text Notes -650 7850 0    60   ~ 0
 Power Regulation Circuit
 Text Label 12600 11450 0    60   ~ 0
 IN1
@@ -474,7 +474,7 @@ Text Label 6800 7250 2    60   ~ 0
 IN2
 Text Label 6800 7450 2    60   ~ 0
 IN1
-Text Label 4250 7700 2    60   ~ 0
+Text Label 7000 6500 2    60   ~ 0
 SRB1
 Text GLabel 29100 4700 3    60   Input ~ 0
 DGND
@@ -522,7 +522,7 @@ F 3 "" H 16550 12250 50  0000 C CNN
 	1    16550 12250
 	1    0    0    -1  
 $EndComp
-Text Label 4300 7350 2    60   ~ 0
+Text Label 7050 6150 2    60   ~ 0
 BIASIN
 Text Label 23500 6300 1    60   ~ 0
 DOUT
@@ -530,8 +530,6 @@ Text Label 23900 6300 1    60   ~ 0
 DIN
 Text Notes 15900 3100 0    60   ~ 0
 Apparently supposed to be 3.3µH????\nSee TI forumns/ WEBENCH
-Text Notes 10150 2100 0    60   ~ 0
-Remove switch??
 $Comp
 L C C14
 U 1 1 58AC9DAD
@@ -604,12 +602,12 @@ NoConn ~ 14550 12000
 $Comp
 L CONN_1 P4
 U 1 1 58B800EE
-P 3400 7350
-F 0 "P4" V 3350 7350 40  0000 C CNN
-F 1 "CONN_1" V 3450 7350 40  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 3400 7350 60  0001 C CNN
-F 3 "" H 3400 7350 60  0000 C CNN
-	1    3400 7350
+P 6150 6150
+F 0 "P4" V 6100 6150 40  0000 C CNN
+F 1 "CONN_1" V 6200 6150 40  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 6150 6150 60  0001 C CNN
+F 3 "" H 6150 6150 60  0000 C CNN
+	1    6150 6150
 	-1   0    0    1   
 $EndComp
 Text GLabel 13650 3750 0    60   Input ~ 0
@@ -730,12 +728,12 @@ IN1-
 $Comp
 L CONN_1 P3
 U 1 1 591A6E5B
-P 3400 7700
-F 0 "P3" V 3350 7700 40  0000 C CNN
-F 1 "CONN_1" V 3450 7700 40  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 3400 7700 60  0001 C CNN
-F 3 "" H 3400 7700 60  0000 C CNN
-	1    3400 7700
+P 6150 6500
+F 0 "P3" V 6100 6500 40  0000 C CNN
+F 1 "CONN_1" V 6200 6500 40  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 6150 6500 60  0001 C CNN
+F 3 "" H 6150 6500 60  0000 C CNN
+	1    6150 6500
 	-1   0    0    1   
 $EndComp
 Text Label 6800 6750 2    60   ~ 0
@@ -994,10 +992,6 @@ F 3 "" H 27100 4200 60  0001 C CNN
 	1    27100 4200
 	1    0    0    -1  
 $EndComp
-Text Label 22150 5650 2    60   ~ 0
-LED2
-Text Label 22150 5750 2    60   ~ 0
-LED3
 Text GLabel 21450 4450 3    60   Input ~ 0
 DGND
 $Comp
@@ -1250,7 +1244,7 @@ Text Label 10000 12050 0    60   ~ 0
 SYS_LOAD
 Text Label 13050 2500 0    60   ~ 0
 SYS_LOAD
-Text Label 11600 1600 0    60   ~ 0
+Text Label 2700 8100 0    60   ~ 0
 BATT_VOLTAGE
 $Comp
 L C C39
@@ -1355,7 +1349,7 @@ L R R19
 U 1 1 59BDE5BA
 P 9650 18500
 F 0 "R19" V 9730 18500 50  0000 C CNN
-F 1 "10k" V 9650 18500 50  0000 C CNN
+F 1 "1M" V 9650 18500 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 9580 18500 50  0001 C CNN
 F 3 "" H 9650 18500 50  0000 C CNN
 	1    9650 18500
@@ -1366,7 +1360,7 @@ L R R20
 U 1 1 59BDE78E
 P 10000 18700
 F 0 "R20" V 10080 18700 50  0000 C CNN
-F 1 "10k" V 10000 18700 50  0000 C CNN
+F 1 "1M" V 10000 18700 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 9930 18700 50  0001 C CNN
 F 3 "" H 10000 18700 50  0000 C CNN
 	1    10000 18700
@@ -1389,7 +1383,7 @@ Text Notes 9600 18350 0    60   ~ 0
 Any equivalent resistors, divide nominal 4.2Vmax/2 = 2.1 (AIN max allowed)\nFor stepping down voltage
 Text Notes 10850 19000 0    60   ~ 0
 CTRL pin. Low disables VINSW, high enables VINSW
-Text Label 20350 4750 0    60   ~ 0
+Text Label 19550 5750 0    60   ~ 0
 BATT_ADC_AIN
 Text Notes 4650 11650 0    60   ~ 0
 This will be USB port (SMD)
@@ -1469,12 +1463,78 @@ F 3 "" H 6650 19500 60  0000 C CNN
 	1    6650 19500
 	1    0    0    -1  
 $EndComp
-Text Label 20350 4900 0    60   ~ 0
+Text Label 19550 5650 0    60   ~ 0
 GPIO_CTRL_PWR_ON
 Text Notes 6950 15000 0    60   ~ 0
 We're using TPS610981
-Text Label 20350 5050 0    60   ~ 0
+Text Label 19650 6050 0    60   ~ 0
 GPIO_OVERCURRENT
+Text Label 20350 5400 0    60   ~ 0
+GPIO_ISET
+Text Label 20350 5300 0    60   ~ 0
+GPIO_TTDM_BAT_EN
+Text GLabel 13900 3750 1    60   Input ~ 0
+DGND
+Text Label 4100 6850 0    60   ~ 0
+DC+INPUT
+Text Notes 3400 6500 0    60   ~ 0
+FOR RECHARGING: \nusing Amphenol FCI 10103594-0001LF
+$Comp
+L USB_OTG J1
+U 1 1 59BAF4BC
+P 3550 7050
+F 0 "J1" H 3350 7500 50  0000 L CNN
+F 1 "USB_OTG" H 3350 7400 50  0000 L CNN
+F 2 "" H 3700 7000 50  0001 C CNN
+F 3 "" H 3700 7000 50  0001 C CNN
+	1    3550 7050
+	1    0    0    -1  
+$EndComp
+Text Label 4550 7150 0    60   ~ 0
+SWDIO
+Text Label 4450 7000 0    60   ~ 0
+SWDCLK
+Text Label 4450 7350 0    60   ~ 0
+N.C.
+$Comp
+L GND-RESCUE-emg_circuit_2_ext_amp #PWR015
+U 1 1 59BB26FA
+P 4100 7700
+F 0 "#PWR015" H 4100 7700 30  0001 C CNN
+F 1 "GND" H 4100 7630 30  0001 C CNN
+F 2 "" H 4100 7700 60  0000 C CNN
+F 3 "" H 4100 7700 60  0000 C CNN
+	1    4100 7700
+	1    0    0    -1  
+$EndComp
+Text Label 24350 6450 0    60   ~ 0
+LED2
+Text Label 25350 4800 2    60   ~ 0
+LED3
+$Comp
+L CONN_2 P6
+U 1 1 59BE4BF7
+P 3450 8500
+F 0 "P6" V 3400 8500 40  0000 C CNN
+F 1 "CONN_2" V 3500 8500 40  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3450 8500 60  0001 C CNN
+F 3 "" H 3450 8500 60  0000 C CNN
+	1    3450 8500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-emg_circuit_2_ext_amp #PWR016
+U 1 1 59BE4F90
+P 4300 8700
+F 0 "#PWR016" H 4300 8700 30  0001 C CNN
+F 1 "GND" H 4300 8630 30  0001 C CNN
+F 2 "" H 4300 8700 60  0000 C CNN
+F 3 "" H 4300 8700 60  0000 C CNN
+	1    4300 8700
+	1    0    0    -1  
+$EndComp
+Text Label 4250 8400 0    60   ~ 0
+DC+INPUT
 Wire Wire Line
 	23800 5700 23800 6850
 Wire Wire Line
@@ -1515,11 +1575,11 @@ Wire Wire Line
 Wire Wire Line
 	6300 6750 6800 6750
 Wire Wire Line
-	3750 7700 4250 7700
+	6500 6500 7000 6500
 Wire Notes Line
 	500  6100 5350 6100
 Wire Notes Line
-	5350 6100 5350 7750
+	5350 6100 5350 8250
 Wire Wire Line
 	23700 5700 23700 6300
 Wire Wire Line
@@ -1645,9 +1705,9 @@ Wire Notes Line
 Wire Notes Line
 	18550 1100 8050 1100
 Wire Wire Line
-	10000 1350 10000 1600
+	1100 7850 1100 8100
 Wire Wire Line
-	10000 1600 11600 1600
+	1100 8100 2700 8100
 Wire Wire Line
 	18000 7800 18000 7700
 Wire Wire Line
@@ -1740,7 +1800,7 @@ Wire Wire Line
 Wire Wire Line
 	15150 12250 15350 12250
 Wire Wire Line
-	3750 7350 4300 7350
+	6500 6150 7050 6150
 Wire Wire Line
 	13800 6350 13800 6600
 Wire Wire Line
@@ -1776,12 +1836,6 @@ Wire Notes Line
 	17450 3600 17450 2900
 Wire Notes Line
 	17450 2900 15850 2900
-Wire Notes Line
-	9900 1150 9900 2150
-Wire Notes Line
-	9900 2150 12100 2150
-Wire Notes Line
-	12100 2150 12100 1100
 Wire Notes Line
 	12100 1100 9900 1100
 Wire Wire Line
@@ -2303,81 +2357,82 @@ Wire Wire Line
 	6650 19100 6650 19500
 Connection ~ 6650 19300
 Wire Wire Line
-	22450 4300 22650 4300
-Wire Wire Line
-	22500 4400 22650 4400
-Wire Wire Line
-	22450 4300 22450 4750
-Wire Wire Line
-	22450 4750 20350 4750
-Wire Wire Line
-	22500 4400 22500 4900
-Wire Wire Line
-	22500 4900 20350 4900
-Wire Wire Line
-	22650 4500 22550 4500
-Wire Wire Line
-	22550 4500 22550 5050
-Wire Wire Line
-	22550 5050 20350 5050
-Wire Wire Line
-	22150 5650 22600 5650
-Wire Wire Line
-	22600 5650 22600 5000
-Wire Wire Line
-	22600 5000 22650 5000
-Wire Wire Line
-	22650 5100 22650 5750
-Wire Wire Line
-	22650 5750 22150 5750
-Wire Wire Line
-	22650 4700 21950 4700
-Wire Wire Line
-	21950 4700 21950 5300
-Wire Wire Line
 	21950 5300 20350 5300
 Wire Wire Line
-	22650 4800 22050 4800
-Wire Wire Line
-	22050 4800 22050 5400
-Wire Wire Line
 	22050 5400 20350 5400
-Text Label 20350 5300 0    60   ~ 0
-GPIO_ISET
-Text Label 20350 5400 0    60   ~ 0
-GPIO_TTDM_BAT_EN
-Text GLabel 13900 3750 1    60   Input ~ 0
-DGND
-$Comp
-L CONN_2 P6
-U 1 1 59BD8B22
-P 2050 8500
-F 0 "P6" V 2000 8500 40  0000 C CNN
-F 1 "CONN_2" V 2100 8500 40  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2050 8500 60  0001 C CNN
-F 3 "" H 2050 8500 60  0000 C CNN
-	1    2050 8500
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
-	2400 8400 2900 8400
-Text Label 2900 8400 0    60   ~ 0
-DC+INPUT
-Text Notes 2300 8200 0    60   ~ 0
-FOR RECHARGING:
+	4100 6850 3850 6850
 Wire Wire Line
-	2400 8600 2900 8600
-$Comp
-L GND-RESCUE-emg_circuit_2_ext_amp #PWR015
-U 1 1 59BD9771
-P 2900 8700
-F 0 "#PWR015" H 2900 8700 30  0001 C CNN
-F 1 "GND" H 2900 8630 30  0001 C CNN
-F 2 "" H 2900 8700 60  0000 C CNN
-F 3 "" H 2900 8700 60  0000 C CNN
-	1    2900 8700
-	1    0    0    -1  
-$EndComp
+	3850 7050 4100 7050
 Wire Wire Line
-	2900 8600 2900 8700
+	3850 7150 4100 7150
+Wire Wire Line
+	3850 7250 4100 7250
+Wire Wire Line
+	3550 7450 3550 7550
+Wire Wire Line
+	3450 7550 4100 7550
+Wire Wire Line
+	4100 7550 4100 7700
+Wire Wire Line
+	3450 7550 3450 7450
+Connection ~ 3550 7550
+Wire Notes Line
+	5700 5850 5700 7650
+Wire Notes Line
+	5700 7650 7450 7650
+Wire Notes Line
+	7450 7650 7450 5850
+Wire Notes Line
+	7450 5850 5700 5850
+Wire Notes Line
+	5350 8250 550  8250
+Wire Wire Line
+	25050 4700 25350 4700
+Wire Wire Line
+	25050 4800 25350 4800
+Wire Wire Line
+	22650 4300 22450 4300
+Wire Wire Line
+	22450 4300 22450 4550
+Wire Wire Line
+	22450 4550 21950 4550
+Wire Wire Line
+	21950 4550 21950 5300
+Wire Wire Line
+	22050 5400 22050 4600
+Wire Wire Line
+	22050 4600 22550 4600
+Wire Wire Line
+	22550 4600 22550 4400
+Wire Wire Line
+	22550 4400 22650 4400
+Wire Wire Line
+	22650 4500 22200 4500
+Wire Wire Line
+	22200 4500 22200 5650
+Wire Wire Line
+	22200 5650 19550 5650
+Wire Wire Line
+	19550 5750 22250 5750
+Wire Wire Line
+	22250 5750 22250 4600
+Wire Wire Line
+	22250 4600 22650 4600
+Wire Wire Line
+	22300 5850 19550 5850
+Wire Wire Line
+	3800 8600 4300 8600
+Wire Wire Line
+	4300 8600 4300 8700
+Wire Wire Line
+	3800 8400 4250 8400
+Wire Wire Line
+	22650 4700 22300 4700
+Wire Wire Line
+	22300 4700 22300 5850
+Wire Wire Line
+	24100 5700 24100 6450
+Wire Wire Line
+	24100 6450 24350 6450
 $EndSCHEMATC
