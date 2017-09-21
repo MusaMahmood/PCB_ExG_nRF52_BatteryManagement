@@ -1563,21 +1563,11 @@ Wire Wire Line
 Wire Wire Line
 	22350 4100 22350 4300
 Wire Wire Line
-	23900 2950 25050 2950
-Wire Wire Line
 	23800 2850 25050 2850
-Wire Wire Line
-	25050 2750 23700 2750
 Wire Wire Line
 	23600 3300 23600 2750
 Wire Wire Line
 	23800 2850 23800 3300
-Wire Wire Line
-	23900 2950 23900 3300
-Wire Wire Line
-	24000 3300 24000 3050
-Wire Wire Line
-	24100 3300 24100 3050
 Wire Wire Line
 	3800 8400 4250 8400
 Wire Wire Line
